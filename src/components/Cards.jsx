@@ -1,0 +1,58 @@
+// eslint-disable-next-line no-unused-vars
+import React from 'react'
+import { Link } from 'react-router-dom'
+import Card1 from '../assets/card-1.jpg'
+import Card2 from '../assets/card-4.jpg'
+import Card3 from '../assets/card-3.jpg'
+
+
+const Cards = () => {
+    return (
+        <>
+            <div className="cards-wrapper">
+                <div className='cards-wrap'>
+                    <div className="slide">
+                        <img src={Card1} alt="" />
+                        <h2 style={{ color: "white" }} >Sevagram Mahotsav</h2>
+                        <Link to='./more-images'><p>View More</p></Link>
+                    </div>
+
+                    <div className="slide">
+                        <img src={Card2} alt="" />
+                        <h2 style={{ color: "white" }}>Sevagram Mahotsav</h2>
+                        <Link to='./more-images'><p>View More</p></Link>
+                    </div>
+
+                    <div className="slide">
+                        <img src={Card3} alt="" />
+                        <h2 style={{ color: "white" }}>Konkan Mahotsav</h2>
+                        <Link to='./more-images'><p>View More</p></Link>
+                    </div>
+                </div>
+            </div>
+
+            <div className='director-wrap'>
+                <div className="director-heading">
+                  JD. DIRECTOR & HoO
+                </div>
+
+                <div className="director-content">
+
+                    {/* <div className="director-img">
+                        <img src={Director} alt="" />
+                    </div> */}
+
+                    <div className="director-info">
+                        <p className=''style={{padding: '40px'}}>It is my pleasure to release the quarterly edition of Newsletter of MSME-Development Institute, Nagpur for the year 2018-19. The newsletter mainly focuses on the awareness created by MSME-DFO on the opportunities available to MSMEs through Central Government and other promotional agencies. With the publication of e-newsletter, this Institute would be able to activate its network to reach out and dissemination of information on the activities of MSME-DFO to all MSMEs.
+
+                            The main purpose of the Newsletter is to bring awareness about the role of MSME-DFO, Nagpur in helping budding and existing entrepreneurs to establish themselves to sustain and grow their pursuit of establishing enterprises. Micro, Small and Medium Enterprises (MSME) Sector is an important pillar of the Indian economy as it contributes significantly to industrial production and exports.</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </>
+    )
+}
+
+export default Cards
